@@ -1,9 +1,26 @@
 .footer {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: red;
     color: white;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
+
+.footerContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .footerPart1 {
+    flex: 0.6;
+  }
+  
+  .footerPart2,
+  .footerPart3 {
+    flex: 0.2;
+  }
