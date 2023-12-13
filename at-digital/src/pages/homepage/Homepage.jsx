@@ -1,9 +1,13 @@
 import React from 'react'
+import Footer from '../../components/Footer/Footer'
 
 function Homepage() {
   return (
-    <div>Homepage</div>
-    
+    <div>
+        <Footer/>
+
+    </div>
+
   )
 }
 
