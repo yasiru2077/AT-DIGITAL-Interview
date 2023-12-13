@@ -22,10 +22,14 @@
     display: flex;
     align-items:baseline;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
   }
   
   .footerPart2,
   .footerPart3 {
     flex: 0.15;
+  }
+
+  .footerPart1 p{
+    text-align: center;
   }
