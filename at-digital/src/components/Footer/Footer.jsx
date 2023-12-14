@@ -39,7 +39,7 @@ function Footer() {
       );
     } else {
       return (
-        <div>
+        <div className="service-container">
           <div className="footerPart2">
             <h3>Our Technologies</h3>
             <p>ReactJS</p>
