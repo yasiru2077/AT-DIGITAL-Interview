@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
 .footer {
     position: absolute;
     left: 0;
@@ -8,7 +12,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 0px 0px 0px 0px;
+    
 }
 
 .footerContainer {
@@ -18,18 +22,37 @@
   }
   
   .footerPart1 {
-    flex: 0.7;
-    display: flex;
-    align-items:baseline;
-    flex-direction: column;
-    padding: 40px;
+    flex: 0.6;
+    text-align: start;
+    
   }
   
   .footerPart2,
   .footerPart3 {
-    flex: 0.15;
+    flex: 0.2;
+    text-align: start;
   }
 
-  .footerPart1 p{
-    text-align: center;
-  }
+.line{
+  padding:0px 0px 0px 1000px ;
+}
+
+.footer-containerName{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoFooter{
+  padding-top: 20px;
+}
+
+h3{
+  font-family: 'Inter', sans-serif;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+}

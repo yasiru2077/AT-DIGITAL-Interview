@@ -6,7 +6,7 @@ function Footer() {
     <div class="footer">
       <div className="footerContainer">
         <div className="footerPart1">
-          <img src="./img/White-Logo.png" alt="" />
+          <img className="logoFooter" src="./img/White-Logo.png" alt="" />
           <p>
             Your goal is our target. Not anything in between. We use online
             marketing platforms and tools to achieve single objective - your
@@ -32,9 +32,11 @@ function Footer() {
           <p>Search Engine Optimization</p>
         </div>
       </div>
-            <hr />
+            <hr className="line"/>
             <div className="footer-containerName">
-            <p>Privacy Policy</p>|<p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <h4>|</h4>
+            <p>Terms & Conditions</p>
             </div>
 
     </div>
