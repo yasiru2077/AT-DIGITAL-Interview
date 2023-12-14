@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-top: 20px;
 }
 
 .footerContainer {
@@ -67,12 +68,15 @@ p{
 @media screen and (min-width: 1440px) {
   .footerPart1{
     flex: 0.6;
+    padding-left: 80px;
   }
   .footerPart2,
   .footerPart3 {
       flex: 0.2; 
   }
-
+  .footerPart3{
+    padding-right: 40px;
+  }
   .line {
       display: block; 
   }
@@ -81,3 +85,28 @@ p{
       margin-right: 400px; 
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .footerPart1 {
+      flex: 0.6;
+      padding-left: 80px;
+      margin-bottom: 20px;
+  }
+  .footerPart2,
+  .footerPart3 {
+      flex: 0.2;
+      
+      margin-bottom: 20px;
+  }
+  .line {
+      display: block;
+  }
+
+  .footerPart1 p {
+      margin-right: 200px;
+  }
+  .footerPart3{
+    padding-right: 40px;
+  }
+}
+
