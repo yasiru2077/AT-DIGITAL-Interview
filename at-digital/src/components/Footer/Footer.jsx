@@ -1,7 +1,68 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./footer.css";
 
 function Footer() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const renderFooterContent = () => {
+    if (windowWidth > 768) {
+      return (
+        <><div className="footerPart2">
+          <h3>Our Technologies</h3>
+          <p>ReactJS</p>
+          <p>Gatsby</p>
+          <p>NextJS</p>
+          <p>NodeJS</p>
+          <p>GraphQL</p>
+          <p>Laravel</p>
+          <p></p>
+        </div><div className="footerPart3">
+            <h3>Our Services</h3>
+            <p>Social media Marketing</p>
+            <p>Web & Mobile App Development</p>
+            <p>Data & Analytics</p>
+            <p>Google Marketing solutions</p>
+            <p>Search Engine Optimization</p>
+          </div></>
+      );
+    } else {
+      return (
+        <div>
+          <div className="footerPart2">
+            <h3>Our Technologies</h3>
+            <p>ReactJS</p>
+            <p>Gatsby</p>
+            <p>NextJS</p>
+            <p>NodeJS</p>
+            <p>GraphQL</p>
+            <p>Laravel</p>
+            <p></p>
+          </div>
+          <div className="footerPart3">
+            <h3>Our Services</h3>
+            <p>Social media Marketing</p>
+            <p>Web & Mobile App Development</p>
+            <p>Data & Analytics</p>
+            <p>Google Marketing solutions</p>
+            <p>Search Engine Optimization</p>
+          </div>
+        </div>
+      );
+    }
+  };
+
   return (
     <div class="footer">
       <div className="footerContainer">
@@ -13,24 +74,7 @@ function Footer() {
             business results.
           </p>
         </div>
-        <div className="footerPart2">
-          <h3>Our Technologies</h3>
-          <p>ReactJS</p>
-          <p>Gatsby</p>
-          <p>NextJS</p>
-          <p>NodeJS</p>
-          <p>GraphQL</p>
-          <p>Laravel</p>
-          <p></p>
-        </div>
-        <div className="footerPart3">
-          <h3>Our Services</h3>
-          <p>Social media Marketing</p>
-          <p>Web & Mobile App Development</p>
-          <p>Data & Analytics</p>
-          <p>Google Marketing solutions</p>
-          <p>Search Engine Optimization</p>
-        </div>
+        {renderFooterContent()}
       </div>
       
             <hr className="line"/>
