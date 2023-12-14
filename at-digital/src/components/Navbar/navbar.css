@@ -36,3 +36,15 @@ ul {
  .NavbarLogo{
     padding-left: 20px;
  } 
+
+ 
+@media screen and (max-width: 768px) {
+    .Navigation{
+        padding: 20px;
+
+    }
+
+    ul{
+        padding: 0;
+    }
+  }
