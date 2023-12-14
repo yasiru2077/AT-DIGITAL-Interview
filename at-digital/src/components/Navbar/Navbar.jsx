@@ -33,6 +33,7 @@ function Navbar() {
           />
           {isMenuOpen && (
             <>
+            
             <div className="Navmobile">
             <ul>
                 <li>
