@@ -32,6 +32,7 @@ function Footer() {
           <p>Search Engine Optimization</p>
         </div>
       </div>
+      
             <hr className="line"/>
             <div className="footer-containerName">
             <p>Privacy Policy</p>

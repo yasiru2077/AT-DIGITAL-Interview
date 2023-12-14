@@ -7,30 +7,32 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color:#6B3CC9;
     color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
-    
 }
 
 .footerContainer {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding-bottom: 20px;
   }
   
   .footerPart1 {
     flex: 0.6;
     text-align: start;
-    
+    padding-left: 100px;
+
   }
   
   .footerPart2,
   .footerPart3 {
     flex: 0.2;
     text-align: start;
+   
   }
 
 .line{
@@ -43,6 +45,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  
 }
 
 .logoFooter{
@@ -56,3 +59,4 @@ h3{
 p{
   font-family: 'Lato', sans-serif;
 }
+
