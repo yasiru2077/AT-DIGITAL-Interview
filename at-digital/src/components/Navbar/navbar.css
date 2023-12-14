@@ -1,16 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+.Navigation{
+    background-color: #6B3CC9;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+   
+}
+
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-right: 20px;
     overflow: hidden;
-    background-color: #dddddd;
+    font-size: 14px;
+    display: flex;
+    gap: 28px;
   }
   
   li {
     float: right;
+    
   }
   
   li a {
     display: block;
     padding: 8px;
+    text-decoration: none;
+    color: white;
   }
+
+ .NavbarLogo{
+    padding-left: 20px;
+ } 

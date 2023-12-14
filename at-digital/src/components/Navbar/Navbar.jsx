@@ -4,19 +4,19 @@ import "./navbar.css";
 function Navbar() {
   return (
     <div className="Navigation">
-      <img src="./img/White-Logo.png" alt="" />
+      <img className="NavbarLogo" src="./img/White-Logo.png" alt="" />
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <a href="#home">SERVICES</a>
         </li>
         <li>
-          <a href="#news">News</a>
+          <a href="#news">ABOUT US</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact">ABOUT US</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about">CAREERS</a>
         </li>
       </ul>
     </div>
