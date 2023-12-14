@@ -60,3 +60,24 @@ p{
   font-family: 'Lato', sans-serif;
 }
 
+.footerPart1 p{
+  margin-right: 700px;
+}
+
+@media screen and (min-width: 1440px) {
+  .footerPart1{
+    flex: 0.6;
+  }
+  .footerPart2,
+  .footerPart3 {
+      flex: 0.2; 
+  }
+
+  .line {
+      display: block; 
+  }
+
+  .footerPart1 p {
+      margin-right: 400px; 
+  }
+}
