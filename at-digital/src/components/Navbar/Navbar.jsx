@@ -21,38 +21,48 @@ function Navbar() {
     setMenuOpen(!isMenuOpen);
   };
 
+  const renderFooterContent1 = () => {
+    return (
+      <>
+        {isMenuOpen && (
+          <div className="Navmobile">
+            <ul>
+              <li>
+                <a href="#home">SERVICES</a>
+              </li>
+              <li>
+                <a href="#news">ABOUT US</a>
+              </li>
+              <li>
+                <a href="#contact">CONTACT</a>
+              </li>
+              <li>
+                <a href="#about">CAREERS</a>
+              </li>
+            </ul>
+          </div>
+        )}
+      </>
+    );
+  };
+
   const renderFooterContent = () => {
     if (windowWidth <= 375) {
       return (
         <>
-          <img
+        <div className="hamburger-container">
+        <img
             className="HamburgerLogo"
             src="./img/Group 2.png"
             onClick={toggleMenu}
             alt=""
           />
-          {isMenuOpen && (
-            <>
-            
-            <div className="Navmobile">
-            <ul>
-                <li>
-                  <a href="#home">SERVICES</a>
-                </li>
-                <li>
-                  <a href="#news">ABOUT US</a>
-                </li>
-                <li>
-                  <a href="#contact">ABOUT US</a>
-                </li>
-                <li>
-                  <a href="#about">CAREERS</a>
-                </li>
-              </ul>
-            </div>
-             
-            </>
-          )}
+          <div className="mobilelist">
+          {renderFooterContent1()}
+          </div>
+          
+        </div>
+          
         </>
       );
     } else {
