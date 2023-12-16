@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+.posterimg{
+    width: 100%;
+}
+
+.radiant-poster{
+    width: Fixed (630px);
+    padding: 24px, 40px, 32px, 40px;
+    height: Hug (306px);
+    position: absolute;
+    bottom: -200px;
+    z-index: 1;
+    background: linear-gradient(to right,#4DCA79, #1CBDDD);
+    font-family: 'Inter', sans-serif;
+    margin-left: 20px;
+    color: white;
+}
+
+.radiant-poster h1{
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2%;
+}
+
+.posterbutton{
+    background-color: #F28D35;
+    font-weight: 700;
+    color: white;
+    border:none;
+    width: 214px;
+    height: 38px;
+    border-radius: 5px;
+    font-size: 14px;
+}

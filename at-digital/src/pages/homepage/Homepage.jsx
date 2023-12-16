@@ -1,12 +1,21 @@
 import React from 'react'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
+import './homepage.css';
 
 function Homepage() {
   return (
     <div>
       <Navbar/>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse totam nostrum laudantium, officia rerum ea! Magni mollitia eveniet nobis vero repellendus illum quae, eligendi fugiat minima inventore libero saepe?</h1>
+      <div className='poster'>
+        <img className='posterimg' src="./img/andy-kelly-0E_vhMVqL9g-unsplash 1.png" alt="" />
+        <div className='radiant-poster'>
+        <h1 className='radiant-posterQuote'>
+          We crush your competitors, goals, and sales records - without the B.S.
+        </h1>
+        <button className='posterbutton'>Get free consultation</button>
+        </div>
+      </div>
       <Footer/>
 
     </div>
